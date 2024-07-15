@@ -1,0 +1,79 @@
+{
+  "name": "teacher-finder-frontend",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "app",
+  "sourceRoot": "apps/teacher-finder-frontend/src",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:application",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/teacher-finder-frontend",
+        "index": "apps/teacher-finder-frontend/src/index.html",
+        "browser": "apps/teacher-finder-frontend/src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "apps/teacher-finder-frontend/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": ["apps/teacher-finder-frontend/src/favicon.ico", "apps/teacher-finder-frontend/src/assets"],
+        "styles": ["apps/teacher-finder-frontend/src/styles.scss"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "buildTarget": "teacher-finder-frontend:build:production"
+        },
+        "development": {
+          "buildTarget": "teacher-finder-frontend:build:development"
+        }
+      },
+      "defaultConfiguration": "development",
+      "options": {
+        "port": 3001
+      }
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "buildTarget": "teacher-finder-frontend:build"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/teacher-finder-frontend/jest.config.ts"
+      }
+    }
+  }
+}
