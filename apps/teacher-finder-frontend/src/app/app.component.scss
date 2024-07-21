@@ -1,3 +1,56 @@
 div {
-    color: blue;
+    border: 1px;
+    border-color: black;
+    border-style: groove;
+    width: 60%;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: white;
+}
+
+input {
+    background-color: rgb(228, 225, 225);
+    border: none;
+    width: 45%;
+    margin: auto;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+input::placeholder {
+    color: black;
+}
+
+form {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#upload-profile-picture {
+    width: 75%;
+}
+
+button {
+    background-color: black;
+    color: white;
+    width: 15%;
+    margin-top: 5px;
+    border: none;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
 }
