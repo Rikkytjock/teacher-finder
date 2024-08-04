@@ -1,0 +1,74 @@
+:root {
+    --background-register: #e6e5e3;
+    --background-register-input: #cfcdce;
+    --background-body: #ffffff;
+    --text: #010101;
+  }
+  
+  div {
+    border: 1px;
+    border-color: black;
+    border-style: groove;
+    width: 60%;
+    margin: auto;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  input {
+    background-color: #cfcdce;
+    border: none;
+    width: 30%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+  
+  input::placeholder {
+    color: var(--text);
+  }
+  
+  form {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  section {
+    background-color: #e6e5e3;
+    margin: auto;
+    padding: 5%;
+  }
+  
+  #forgot {
+    border: none;
+  }
+
+  #forgot-para {
+    text-align: center;
+  }
+
+  #forgot-para a {
+    color: #010101;
+  }
+
+  #login-button {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    width: 15%;
+    display: block;
+    border: none;
+  }
+
+  #big-div {
+    display: flex;
+    border: none;
+  }
