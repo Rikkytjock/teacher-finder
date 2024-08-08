@@ -1,24 +1,29 @@
 footer {
-    background-color: black;
-    height: 200px;
+  background-color: black;
+  height: 200px;
 }
 
 p {
-    color: white;
-    text-align: center;
+  color: white;
+  text-align: center;
 }
 
 figure {
-    margin: auto;
-    width: 50%;
+  margin: auto;
+  width: 50%;
 }
 
 img {
-    width: 200px;
-    margin: auto;
+  width: 200px;
+  margin: auto;
 }
 
 div {
-    margin: auto;
-    width: 40%;
+  margin: auto;
+  width: 40%;
+}
+
+#footer-image {
+  height: 100px;
+  z-index: 1337;
 }
