@@ -6,9 +6,6 @@
 }
 
 div {
-  border: 1px;
-  border-color: black;
-  border-style: groove;
   width: 50%;
   margin: auto;
 }
@@ -74,28 +71,34 @@ section {
   margin-top: 5px;
   border: none;
   margin-right: 10px;
+  margin: auto;
+  height: 40px;
 }
 
 .form-container input[type='file'] {
   display: none; /* Döljer filinmatningsfälten */
 }
 
-.file-upload-label {
-  background-color: #cfcdce;
-  border: none;
-  width: 75%;
-  margin: auto;
-  padding: 5px;
-  margin-top: 7px;
-  display: inline-block;
-  box-sizing: border-box;
-  margin-left: 10px;
-}
-
-.file-upload-label span {
-  display: block;
-}
-
 .file-upload-label input[type='file'] {
   display: none; /* Döljer den faktiska filinputfältet */
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-row label {
+  width: 50%;
+  text-align: end;
+}
+
+.form-row {
+  width: 100%;
+}
+
+#upload-profile-picture{
+  width: 50%;
 }
