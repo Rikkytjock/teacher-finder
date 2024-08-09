@@ -9,21 +9,12 @@ p {
 }
 
 figure {
-  margin: auto;
-  width: 50%;
-}
-
-img {
-  width: 200px;
-  margin: auto;
-}
-
-div {
-  margin: auto;
-  width: 40%;
+  padding-top: 30px;
 }
 
 #footer-image {
   height: 100px;
   z-index: 1337;
+  display: block;
+  margin: 0 auto;
 }
