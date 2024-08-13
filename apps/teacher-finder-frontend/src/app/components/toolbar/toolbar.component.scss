@@ -1,0 +1,54 @@
+.normal {
+  width: 70px;
+  display: block;
+  margin: 0 auto;
+}
+
+.hover {
+    display: none;  
+    width: 70px;
+}
+
+section {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  background-color: #e6e5e3;
+}
+
+figure {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
+
+.big-section {
+  width: 100%;
+  display: block;
+}
+
+.add-profile-pic {
+  position: relative;
+  top: -50%; 
+  margin-bottom: -50%; 
+  width: 70px;
+}
+
+figure:hover {
+    cursor: pointer;
+}
+
+figure:hover .normal {
+    display: none;
+}
+
+figure:hover .hover {
+    display: block;
+    margin: 0 auto;
+}
+
+figure:hover h3 {
+    color: #af683e;
+}
+
