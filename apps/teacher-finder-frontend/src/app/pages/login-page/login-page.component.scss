@@ -6,9 +6,6 @@
   }
   
   div {
-    border: 1px;
-    border-color: black;
-    border-style: groove;
     width: 60%;
     margin: auto;
   }
@@ -66,9 +63,12 @@
     width: 15%;
     display: block;
     border: none;
+    margin: auto;
+    margin-top: 20px;
   }
 
   #big-div {
-    display: flex;
     border: none;
   }
+
+  

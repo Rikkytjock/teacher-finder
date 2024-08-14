@@ -9,6 +9,11 @@
     width: 70px;
 }
 
+.active {
+  display: none;  
+  width: 70px;
+}
+
 section {
   width: 60%;
   display: flex;
@@ -35,10 +40,6 @@ figure {
   width: 70px;
 }
 
-figure:hover {
-    cursor: pointer;
-}
-
 figure:hover .normal {
     display: none;
 }
@@ -46,9 +47,37 @@ figure:hover .normal {
 figure:hover .hover {
     display: block;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 figure:hover h3 {
     color: #af683e;
 }
+
+a {
+  text-decoration: none;
+}
+
+
+figure:active {
+  cursor: pointer;
+}
+
+figure:active .normal {
+  display: none;
+}
+
+figure:active .hover {
+  display: none;
+}
+
+figure:active .active {
+  display: block;
+  margin: 0 auto;
+}
+
+figure:active h3 {
+  color: #d7b49f;
+}
+
 
