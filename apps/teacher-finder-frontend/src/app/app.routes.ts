@@ -1,5 +1,6 @@
 import { Route } from '@angular/router'
 import { AddProgramPageComponent } from './pages/add-program-page/add-program-page.component'
+import { FormTestPageComponent } from './pages/form-test-page/form-test-page.component'
 import { LoginPageComponent } from './pages/login-page/login-page.component'
 import { MyProfilePageComponent } from './pages/my-profile-page/my-profile-page.component'
 import { MyProgramsPageComponent } from './pages/my-programs-page/my-programs-page.component'
@@ -10,5 +11,6 @@ export const appRoutes: Route[] = [
   { path: 'register', component: RegisterPageComponent },
   { path: 'add-program', component: AddProgramPageComponent },
   { path: 'my-programs', component: MyProgramsPageComponent },
-  { path: 'my-profile', component: MyProfilePageComponent }
+  { path: 'my-profile', component: MyProfilePageComponent },
+  { path: 'form-test', component: FormTestPageComponent }
 ]
